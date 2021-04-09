@@ -1,0 +1,65 @@
+.main-footer__wrapper{
+  background: #003C71;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  p, a {
+    color: #ffffff;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.btn__line {
+  height: 1px;
+  background: #101820;
+  margin-top: 3px;
+  width: 100%;
+  transform: scaleX(.3);
+  transform-origin: 0 0;
+  transition: transform .7s ease;
+}
+.btn:hover .btn__line {
+  transform: scaleX(1);
+}
+.btn{
+  background: #ED8B00;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.social-footer{
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+ a {
+    margin-right: 1em;
+    transition: 0.3s linear;
+  }
+  a:hover{
+    transform: scale(1.2);
+    transition: 0.3s linear;
+  }
+}
+.footer-1__text{
+  margin-top: 1em;
+}
+.logo__footer{
+  width: 180px;
+}
+.footer-2 p a, .footer-3 p a, .footer-4 p{
+  font-family: "RobotoSlab-Bold";
+}
+.footer-2 h3, .footer-3 h3{
+  margin-bottom: 0.5em;
+}
+.footer-2 li::before, .footer-3 li::before{
+  content: "\25A0";
+  color: #ffffff;
+  font-size: 10px;
+  margin-right: 0.5em;
+}
+.footer-2 li, .footer-3 li{
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+}

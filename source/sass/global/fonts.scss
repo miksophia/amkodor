@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "ProximaNova-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("ProximaNova-Regular"),
+    url("../fonts/ProximaNova-Regular.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src:
+    local("ProximaNova-Bold"),
+    url("../fonts/ProximaNova-Bold.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mistral";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Mistral"),
+    url("../fonts/Mistral.woff2") format("woff2"),
+    url("../fonts/Mistral.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto-Regular"), local("Roboto-Regular"),
+  url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: local("Roboto-Bold"), local("Roboto-Bold"),
+  url("../fonts/Roboto-Bold.woff2") format("woff2"),
+  url("../fonts/Roboto-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Roboto-Medium"), local("Roboto-Medium"),
+  url("../fonts/Roboto-Medium.woff2") format("woff2"),
+  url("../fonts/Roboto-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto-Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("RobotoSlab-Regular"),
+  url("../fonts/RobotoSlab-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "RobotoSlab-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: local("RobotoSlab-Bold"),
+  url("../fonts/RobotoSlab-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto-Slab";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("RobotoSlab-Medium"),
+  url("../fonts/RobotoSlab-Medium.ttf") format("ttf");
+}

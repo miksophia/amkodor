@@ -1,0 +1,157 @@
+
+.main-header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #003C71;
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+.header-wrap{
+display: flex;
+  height: 88px;
+}
+.main-header .container{
+  height: 100%;
+}
+.menu ul a{
+  color: #FFFFFF;
+}
+.main-header a{
+  color: #ffffff;
+}
+.menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  input {
+    display: none;
+  }
+
+  button {
+    outline: none;
+    background: transparent;
+    border: none;
+  }
+}
+.menu > ul{
+  display: flex;
+  position: relative;
+  width: 50%;
+  justify-content: space-between;
+}
+.menu > ul > li {
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+//.menu > ul > li::after{
+//  content: " ";
+//  width: 60px;
+//  height: 1px;
+//  background: #ed8b00;
+//  position: absolute;
+//  bottom: 30px;
+//}
+.main-header .active-item div{
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ED8B00;
+}
+.active-item div > a{
+  color: #ED8B00;
+}
+.active-item .drop{
+  background: url(../img/arrow-orn.svg) no-repeat right 52% !important;
+}
+.mail::before{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  content: "";
+  top: -2px;
+  background-repeat: no-repeat;
+  background-image: url(../img/mail_icon.svg);
+  color: #ffffff;
+  left: -25px;
+}
+.mail{
+  position: relative;
+  margin-left: 1.5em;
+  align-self: center;
+}
+.logo {
+  flex-basis: 15%;
+  align-self: center;
+}
+.phone{
+  display: flex;
+  padding-top: 35px;
+  img{
+    align-self: start;
+    margin-top: -3px;
+  }
+}
+.drop__list-1, .drop__list-2 , .phone{
+  position: relative;
+  display: flex;
+}
+.drop__list-1:hover .list-1{
+  display: flex;
+}
+.drop__list-2:hover .list-2{
+  display: flex;
+}
+.phone:hover .list-3{
+  display: flex;
+}
+.list-2 li, .phone li{
+  a {
+    color: #101820;
+  }
+}
+.drop {
+  padding-right: 24px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  background: url(../img/arrow.svg) no-repeat right 52%;
+}
+.list-1, .list-2, .list-3{
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.15);
+  top: 100%;
+  display: none;
+  padding: 10px 10px 0 10px;
+  left: -10px;
+  .list-1-1, .list-1-2 {
+    flex-direction: column;
+    width: max-content;
+    a {
+      color: #101820;
+    }
+  }
+  li{
+    padding-bottom: 10px;
+
+  }
+  li:hover a{
+    color: #ED8B00;
+  }
+  .list-1-1{
+    margin-right: 2em;
+  }
+}
+
+.list-2, .phone ul{
+  flex-direction: column;
+  width: max-content;
+}
+.phone ul{
+  margin-left: 24px;
+}
+.social, .search{
+  align-self: center;
+}
+

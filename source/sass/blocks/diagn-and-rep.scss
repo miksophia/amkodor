@@ -1,0 +1,39 @@
+.bread-crumbs{
+  margin: 1em 0;
+  ul{
+    display: flex;
+  }
+  li{
+    margin-right: 2.5em;
+  }
+}
+.bread-crumbs li a {
+  position: relative;
+  color:  #003C71;
+}
+.bread-crumbs li a::after{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  content: "";
+  top: -2px;
+  right: -30px;
+  background-repeat: no-repeat;
+  background-image: url(../img/arrow-right.svg);
+}
+.diagn-and-rep{
+  h1{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+  }
+}
+.diagn__wrap{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 2em;
+  h2{
+    margin-top: 0.5em;
+  }
+}
