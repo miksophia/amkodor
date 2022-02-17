@@ -1,0 +1,18 @@
+.item-header{
+  margin-bottom: 0.5em;
+}
+.engine__text{
+  ol{
+    padding-left: 18px;
+    margin-bottom: 2em;
+  }
+  ol > li{
+    margin-bottom: 1em;
+  }
+  li::marker{
+    font-weight: bold;
+  }
+}
+.engine__wrap ul{
+  margin-bottom: 0;
+}

@@ -30,6 +30,7 @@
     "webpack-stream": "^6.1.1"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "inputmask": "^5.0.5",
     "jquery": "^3.5.1",
     "jquery-validation": "^1.19.3",

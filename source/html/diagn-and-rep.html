@@ -25,13 +25,17 @@
       </h1>
       <div class="diagn__wrap">
         <a href="">
+          <div>
           <img src="assets/img/diagn-and-rep/image-1.jpg">
+          </div>
           <h2>
             Диагностика
           </h2>
         </a>
         <a href="">
+          <div>
           <img src="assets/img/diagn-and-rep/image-2.jpg">
+          </div>
           <h2>
             Ремонт спецтехники и отдельных узлов
           </h2>
@@ -39,8 +43,58 @@
       </div>
     </div>
   </section>
+
+
+
 </main>
 @include('components/footer.html')
+<div class="modal__text-us">
+  <div class="text-us__close" data-mod-close>
+    <button>Закрыть</button>
+  </div>
+  <div class="container">
+    <div class="text-us--wrap">
+      <img src="assets/img/jpg/modal.jpg">
+      <form>
+        <p class="text-us__header">
+          Напишите нам!
+        </p>
+        <div class="text-us__inf">
+          <div class="m-form__input">
+          <input type="text" required class="input__input" id="user_name1" name="name">
+            <div class="input__label">Ваше имя*</div>
+          </div>
+          <div class="m-form__input">
+          <input type="tel" id="user_phone1" required class="input__input" name="phone">
+            <div class="input__label">Ваш номер телефона*</div>
+          </div>
+          <div class="m-form__input">
+          <input type="email" id="user-email" required class="input__input" name="email">
+            <div class="input__label">Ваш e-mail*</div>
+          </div>
+          <div class="m-form__input">
+          <textarea name="message" class="input__input" id="user-mas"></textarea>
+            <div class="input__label">Сообщение</div>
+          </div>
+        </div>
+        <div class="text-us__radio">
+          <p>Вы:</p>
+          <input type="radio" checked id="client" name="type-cl">
+          <label for="client">Клиент</label>
+          <input type="radio" id="partner" name="type-cl">
+          <label for="partner">Партнер</label>
+        </div>
+        <button type="submit" class="btn">
+          Отправить
+          <div class="btn__line" data-mod-close></div>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
 @include('general/scripts.html')
+<script>
+
+</script>
 </body>
 </html>

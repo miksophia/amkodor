@@ -1,0 +1,146 @@
+.vacancy--wrap{
+  display: grid;
+  grid-template-columns: 2fr 3.5fr;
+  gap: 40px;
+}
+.anketa a{
+  display: flex;
+  align-items: center;
+  img{
+    width: auto;
+    transition: .3s linear;
+  }
+  p{
+    color: #000000;
+    font-weight: 500;
+    margin-left: 1em;
+    transition: .3s linear;
+  }
+}
+.vacancy__link{
+  color: #003C71;
+  font-size: 24px;
+  transition: .2s linear;
+}
+.vacancy__link:hover{
+  color: #ED8B00;
+  transition: .2s linear;
+}
+.vacancy__inf{
+  display: grid;
+ gap: 20px;
+  align-content: start;
+}
+.vacancy__img{
+  width: auto;
+}
+.vacancy__header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  align-items: center;
+  cursor: pointer;
+  img{
+    cursor: pointer;
+  }
+}
+.vacancy__img--open{
+  display: none;
+}
+.vacancy__descr__inf{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  margin-bottom: 1em;
+}
+.vac__list{
+  li{
+    color: #666666;
+  }
+  li::before{
+    content: "\2013";
+    color: #ED8B00;
+    margin-right: 0.3em;
+  }
+}
+.vacancy__main > ul > li{
+
+  border-bottom: 1px solid #AAAAAA;
+  padding-left: 2em;
+}
+.vacancy__descr button{
+ margin-bottom: 2em;
+}
+.vacancy__descr__closed{
+  display: none;
+}
+.vacancy__descr__open{
+  display: block;
+  transition: height .5s ease;
+  overflow  : hidden;
+}
+.vacancy__main li:nth-child(n+2) {
+  .vacancy__header {
+    margin-top: 1em;
+  }
+}
+.vacancy__image--closed{
+  .vacancy__img--closed{
+    display: block;
+  }
+  .vacancy__img--open{
+    display: none;
+  }
+}
+.vacancy__image--active{
+  .vacancy__img--closed{
+    display: none;
+  }
+  .vacancy__img--open{
+    display: block;
+  }
+}
+.vacancy__header h3{
+  max-width: 600px;
+  padding-right: 1em;
+}
+.vacancy__main{
+  margin-bottom: 3em;
+}
+.anketa:hover p{
+  color: #ED8B00;
+  transition: .3s linear;
+}
+.anketa:hover img{
+  transform: scale(1.08);
+  transition: .3s linear;
+}
+.vacancy--bold{
+  font-weight: 500;
+}
+
+@media (max-width:1200px){
+  .vacancy--wrap{
+    grid-template-columns: 1fr;
+  }
+  .vacancy__inf p{
+    max-width: 500px;
+  }
+
+}
+@media (max-width:767px){
+  .vacancy__image img{
+    width: 30px;
+  }
+  .vacancy__main>ul>li{
+    padding-left: 0;
+  }
+  .vacancy--wrap h3, .vacancy__link{
+    font-size: 20px;
+  }
+  .vacancy__descr__inf{
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+}

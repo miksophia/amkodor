@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <section class="bread-crumbs">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="">
+            Главная
+          </a>
+        </li>
+        <li>
+          500
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="error">
+    <img src="assets/img/jpg/error.jpg">
+    <div class="error--wrap">
+      <div class="container">
+        <div class="error__inf">
+          <div class="error__number">
+            <p>500</p>
+          </div>
+          <div class="error__text">
+            <p class="error__header">
+              Internal Server Error
+            </p>
+            <p>
+              Ошибка 500 говорит о том, что сервер не может обработать запрос к сайту, на странице которого вы находитесь.
+              При этом браузер не может точно сообщить, что именно пошло не так.
+            </p>
+            <a class="btn" href="">
+              Главная
+              <div class="btn__line"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+</body>
+</html>

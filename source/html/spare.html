@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <section class="bread-crumbs">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="">
+            Главная
+          </a>
+        </li>
+        <li>
+          Запчасти
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="spare">
+    <div class="container">
+      <h1 class="header">
+        Запчасти
+      </h1>
+      <div class="spare--wrap">
+        <ul class="spare__list-img ">
+          <li >
+            <img src="assets/img/rep-types/t1.jpg">
+          </li>
+          <li>
+            <img src="assets/img/rep-types/t2.jpg">
+          </li>
+          <li>
+            <img src="assets/img/rep-types/t3.jpg">
+          </li>
+          <li>
+            <img src="assets/img/rep-types/t4.jpg">
+          </li>
+          <li>
+            <img src="assets/img/rep-types/t5.jpg">
+          </li>
+        </ul>
+        <div class="spare__right">
+          <div class="spare__scroll">
+            <div class="scroll__header">
+             <p>Запчасти</p>
+            </div>
+
+            <div class="mycustom-scroll" data-mcs-theme="dark-thick">
+              <ul class="scroll__list">
+                <li >
+                  Мосты
+                </li>
+                <li>
+                  Муфты, п/муфты
+                </li>
+                <li>
+                  Ножи
+                </li>
+                <li>
+                  Обода
+                </li>
+                <li>
+                  Пальцы
+                </li>
+                <li>
+                  погрузочное оборудование
+                </li>
+                <li>
+                  Муфты, п/муфты
+                </li>
+                <li>
+                  Ножи
+                </li>
+                <li>
+                  Обода
+                </li>
+                <li>
+                  Пальцы
+                </li>
+                <li>
+                  погрузочное оборудование
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="spare__inform">
+          <div class="spare__inf">
+            <p>
+              Наше предприятие имеет статус официального торгово-сервисного центра холдинга “АМКОДОР”, официального сервисного центра ОАО “Минского моторного завода”,
+              ОАО “Экран”, ЗАО “Прамотроник” и ООО “САЛЕО” – управляющая компания холдинга». Поставляем запасные части, узлы и агрегаты напрямую от заводов-изготовителей,
+              прямые контракты, гибкие цены, возможность поставки под заказ, минимальные сроки поставки.
+            </p>
+            <p>
+              Наше предприятие имеет статус официального торгово-сервисного центра холдинга “АМКОДОР”, официального сервисного центра ОАО “Минского моторного завода”,
+              ОАО “Экран”, ЗАО “Прамотроник” и ООО “САЛЕО” – управляющая компания холдинга». Поставляем запасные части, узлы и агрегаты напрямую от заводов-изготовителей,
+              прямые контракты, гибкие цены, возможность поставки под заказ, минимальные сроки поставки.
+            </p>
+          </div>
+          <p class="diagn-main__tel"><strong>Консультации и подбор запасных частей:
+            <a href="tel:+375 (17) 512-29-71" >+375 (17) 512-29-71,</a> <a href="tel:+375 (44) 713-77-23">
+              +375 (44) 713-77-23,</a> <a href="mailto:pam196@yandex.ru"> pam196@yandex.ru.</a></strong></p>
+          <div class="spare__btns">
+            <button class="btn">
+              <div class="btn-text">
+                Обратный звонок
+                <div class="btn__line"></div>
+              </div>
+            </button>
+            <a class="link" href="">
+              Скидки
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="diagn-questions">
+    <div class="container">
+      <div class="diagn-questions--wrap">
+        <div>
+          <h3>
+            Остались вопросы?
+          </h3>
+          <button class="btn">
+            <div class="btn-text">
+              Напишите нам
+              <div class="btn__line"></div>
+            </div>
+          </button>
+        </div>
+        <div>
+          <h3>
+            Условия рассрочки платежа
+          </h3>
+          <a class="btn" href="">
+            <div class="btn-text">
+              Как заплатить?
+              <div class="btn__line"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+
+<script> (function($) {
+  $(window).on('load', function() {
+    $('.mycustom-scroll').mCustomScrollbar();
+  });
+})(jQuery);</script>
+<script>
+  $('.mycustom-scroll').mCustomScrollbar({
+    axis: 'y',              // вертикальный скролл
+    theme: 'dark-thick',  // тема
+    scrollInertia: '330',   // продолжительность прокрутки, значение в миллисекундах
+    mouseWheel: {
+      deltaFactor: 30    // кол-во пикселей на одну прокрутку колёсика мыши
+    }
+  });
+</script>
+
+</body>
+</html>

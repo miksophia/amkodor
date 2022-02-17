@@ -1,0 +1,264 @@
+.contacts__left{
+  background: #003C71;
+}
+.contacts--wrap{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.branch-inf, .contacts__inf{
+  .container{
+    max-width: 722px;
+    margin: 0 0 0 auto;
+  }
+}
+.contacts__branch{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.branch{
+  display: grid;
+  align-content: space-between;
+  padding:60px 24px;
+  gap: 40px;
+  .link-cont{
+    color: #003C71;
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+  }
+  .link-cont::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color:#003C71;
+    margin-top: 2px;
+    transition: transform .7s ease;
+    transform-origin: 0 0;
+  }
+
+}
+.branch--active .link-cont{
+  display: none;
+}
+.branch:hover{
+  .link-cont::after{
+    transform: scaleX(0);
+    transform-origin: 100% 0;
+  }
+}
+.branch--active{
+  h3{
+    color: #FFFFFF;
+  }
+  .link-cont{
+    color: #ED8B00;
+  }
+  .link-cont::after{
+    background-color: #ed8b00;
+  }
+}
+.branch--off{
+  background: #ED8B00;
+}
+.branch-inf{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  h3, li{
+    color: #FFFFFF;
+  }
+  ul{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 16px;
+    column-gap: 60px;
+  }
+  li a{
+    color: #FFFFFF;
+  }
+  li a:hover{
+    color: #ED8B00;
+  }
+}
+.contacts__inf--wrap{
+  margin-top: 2em;
+  margin-bottom: 3em;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 60px;
+  p{
+    color: #FFFFFF;
+  }
+  .contacts__inf__link{
+    color: #ed8b00;
+    margin-top: 2em;
+    display: block;
+    width: fit-content;
+    cursor: pointer;
+  }
+  .contacts__inf__link::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color:#ed8b00;
+    margin-top: 1px;
+    transition: transform .7s ease;
+    transform-origin: 0 0;
+  }
+  .contacts__inf__link:hover::after{
+    transform: scaleX(0);
+    transform-origin: 100% 0;
+    background-color:#ED8B00;
+  }
+}
+.contacts__inf{
+  border-top: 2px solid #ED8B00;
+}
+.contacts--item{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+.contacts__branch{
+  position: relative;
+}
+.branch{
+  position: relative;
+}
+.branch-inf{
+  display: none;
+}
+.branch-inf--active{
+  display: grid;
+}
+.ymap-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: url('../img/png/yandex-before-load-marker.png') #ffffff no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+.ymap-container1{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: url('../img/png/yandex-before-load-marker.png') #ffffff no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+
+}
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: transparent;
+}
+.loader {
+  position: absolute;
+  z-index: 2;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0,0,0,.55);
+}
+
+.loader:after,
+.loader:before {
+  box-sizing: border-box;
+}
+
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width:1200px){
+  .contacts--wrap{
+    grid-template-columns: 1fr;
+  }
+  .branch-inf .container, .contacts__inf .container{
+    max-width: none;
+  }
+  .ymap-container{
+    height: 400px;
+  }
+}
+@media (max-width:767px){
+  .ymap-container{
+    height: 300px;
+  }
+  .branch h3{
+    font-size: 16px;
+  }
+  .branch{
+    padding: 16px 10px;
+    gap: 16px;
+    .link-cont{
+      font-size: 14px;
+    }
+  }
+  .branch-inf h3{
+    font-size: 16px;
+  }
+  .branch-inf ul{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+  .contacts__inf--wrap{
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    p{
+      font-size: 14px;
+    }
+  }
+  .contacts__inf--wrap .contacts__inf__link{
+    margin-top: 1em;
+  }
+}

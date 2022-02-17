@@ -9,8 +9,15 @@ import {swiper} from "./modules/swiper";
 import {inputmask} from "./modules/mask-tel";
 import {validation} from "./modules/validation";
 import {vendors} from "./modules/vendors";
+import {header} from "./modules/header";
+import {slid} from "./modules/slid";
 
-swiper();
+
+
+//swiper();
 inputmask();
 validation();
 vendors();
+header();
+slid();
+

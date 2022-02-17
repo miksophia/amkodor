@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+@include('general/head.html')
+<body>
+@include('components/header.html')
+
+<main>
+  <section class="bread-crumbs">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="">
+            Главная
+          </a>
+        </li>
+        <li>
+          404
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="error">
+    <img src="assets/img/jpg/error.jpg">
+    <div class="error--wrap">
+      <div class="container">
+        <div class="error__inf">
+          <div class="error__number">
+            <p>404</p>
+          </div>
+          <div class="error__text">
+            <p class="error__header">
+              Упс… Мы не можем найти то, что Вы ищете
+            </p>
+            <p>
+              Скорее всего, это случилось по одной из следующих причин: страница переехала,
+              страницы больше нет или Вам просто нравится изучать 404 страницы.
+            </p>
+            <a class="btn" href="">
+              Главная
+              <div class="btn__line"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+@include('components/footer.html')
+@include('general/scripts.html')
+</body>
+</html>
